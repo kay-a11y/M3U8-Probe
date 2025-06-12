@@ -19,3 +19,6 @@ data/log/*.log
 # OS generated files (optional)
 .DS_Store
 Thumbs.db
+
+# archived
+archive
