@@ -1,6 +1,6 @@
 # 🎥 M3U8-Probe
 
-A tiny yet powerful toolkit to **scan, download, and merge** `.ts` video segments from m3u8 file(without KEY) or direct segment links — without needing a full m3u8 file.
+A tiny yet powerful toolkit to **scan, download, and merge** `.ts` video segments from m3u8 file(without KEY) or direct segment links - without needing a full m3u8 file.
 
 ---
 
@@ -10,29 +10,46 @@ A tiny yet powerful toolkit to **scan, download, and merge** `.ts` video segment
 - Great for blind or brute-force-style segment discovery under censorship or poorly indexed sources
 - Multi-threaded (async) downloading with retry logic
 - Merge all chunks into one `.ts` file (ready for ffmpeg)
-- Readable script-style — just edit and run
+- Readable script-style - just edit and run
 
 ---
 
 ## 😺 Quick Start
 
-1. **Clone the project:**
+```bash
+git clone https://github.com/kay-a11y/M3U8-Probe.git
+cd M3U8-Probe
 
-    ```bash
-    git clone https://github.com/kay-a11y/M3U8-Probe.git
-    ```
+# 🌀 Create virtual environment
+python3 -m venv .venv
 
-2. **Navigate to the project directory:**
+# 🌿 Activate the virtual environment
+source .venv/bin/activate
 
-    ```bash
-    cd M3U8-Probe
-    ```
+# 📦 Install dependencies
+pip install -r requirements.txt
 
-3. **Install the requirements:**
+# 🚀 Run the script (edit params manually inside the file first)
+python src/m3u8_dl.py
+# or
+python src/link_dl.py
+```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
+
+### 📋 Sample Output
+
+```
+segs length = 623
+💘 Downloading: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 623/623 [00:36<00:00,  7.15seg/s]
+```
+
+```
+🔍 Scanning segments: 148seg [01:39,  1.49seg/s]
+💘 Downloading:  99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 146/148 [00:14<00:00, 16.33seg/s] 
+2025-06-12 18:11:49,064 - WARNING - 💥 020.png.ts error:  (try 1/3)
+💘 Downloading: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 148/148 [00:17<00:00,  8.41seg/s]
+```
 
 ---
 
@@ -70,29 +87,6 @@ Optional:
 
 ---
 
-### ▶️ 2. Run It
-
-```bash
-python3 m3u8_dl.py
-# or
-python3 link_dl.py
-```
-
-```
-segs length = 623
-💘 Downloading: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 623/623 [00:36<00:00,  7.15seg/s]
-
-```
-
-```
-🔍 Scanning segments: 148seg [01:39,  1.49seg/s]
-💘 Downloading:  99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 146/148 [00:14<00:00, 16.33seg/s] 
-2025-06-12 18:11:49,064 - WARNING - 💥 020.png.ts error:  (try 1/3)
-💘 Downloading: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 148/148 [00:17<00:00,  8.41seg/s]
-```
-
----
-
 ## 🐞 Troubleshooting
 
 | Issue                                   | Fix                                                           |
@@ -112,8 +106,7 @@ I'm writing a detailed blog post including:
 * How to adjust segment logic
 * Convert `.ts` to `.mp4` with `ffmpeg`
 
-> 🔗 [Read the full tutorial on my blog →](https://kay-a11y.github.io)  
-(Will update soon...)
+> 🔗 <a href="https://kay-a11y.github.io/posts/m3u8-probe/" target="_blank">Read the full tutorial on my blog</a>.
 
 ---
 
