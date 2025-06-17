@@ -14,8 +14,6 @@ You can use it to:
 
 Perfect for automating content collection when a site is using `.m3u8`-based streaming.
 
----
-
 ## ✨ Features
 
 * **Segment-Aware Parsing** - Automatically filters out ads or irrelevant `.ts` chunks based on path patterns
@@ -26,8 +24,6 @@ Perfect for automating content collection when a site is using `.m3u8`-based str
 
   * `m3u8_dl.py`: Parse and fetch segments from remote `.m3u8`
   * `link_dl.py`: Guess segments based on base URL + index (great when `.m3u8` is hidden)
-
----
 
 ### 📋 Sample Output
 
@@ -51,8 +47,6 @@ Or when using `link_dl.py` with index-based guessing:
 
 > All output gets saved under ./data/ by default.
 
----
-
 ## 🚀 Usage
 
 Clone the repo and install dependencies:
@@ -62,8 +56,6 @@ git clone https://github.com/kay-a11y/M3U8-Probe.git
 cd M3U8-Probe
 pip install -r requirements.txt
 ```
-
----
 
 ### 🧩 Option 1: Download with `m3u8_dl.py`
 
@@ -78,8 +70,6 @@ Before running, open `src/m3u8_dl.py` and manually edit:
 * `remote_m3u8_url`: the full link to the playlist
 * `output_file`: where to save the final merged video
 * `headers`: custom `headers` to bypass referer/origin restrictions
-
----
 
 ### 🔍 Option 2: Download with `link_dl.py`
 
@@ -96,8 +86,6 @@ Before running, edit:
 * `output_file`: final merged video name
 * `headers`: custom `headers` to bypass referer/origin restrictions
 
----
-
 ## 📖 Full Guide
 
 I'm writing a detailed blog post including:
@@ -111,8 +99,6 @@ I'm writing a detailed blog post including:
 
 > Will update soooon!
 
----
-
 ## 🚧 TODO
 
 * [ ] Add CLI support with `argparse`
@@ -121,13 +107,9 @@ I'm writing a detailed blog post including:
 * [ ] Convert to `.mp4` automatically
 * [ ] More error-handling / verbose logs
 
----
-
 ## 🧑‍💻 Author
 
 > 🐾 Blog: [kay-a11y.github.io](https://kay-a11y.github.io)
-
----
 
 ## 📘 License
 
