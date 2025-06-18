@@ -30,7 +30,7 @@ Perfect for automating content collection when a site is using `.m3u8`-based str
 When you run `m3u8_dl.py` on a valid `.m3u8` URL:
 
 ```
-s2025-06-17 18:36:02,307 - INFO - base_url = https://play.modujx12.com/20240701/1rIWCjMw/2000kb/hls/
+2025-06-17 18:36:02,307 - INFO - base_url = https://play.modujx12.com/20240701/1rIWCjMw/2000kb/hls/
 2025-06-17 18:36:08,707 - INFO - m3u8_file = /home/z3phyr/repos/GazeKit/hub-generalM3u8/data/wrecked_s01e01/playlist.m3u8
 2025-06-17 18:36:08,710 - INFO - segs length = 623
 💘 Downloading: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 623/623 [00:36<00:00,  7.15seg/s]
@@ -96,8 +96,6 @@ I'm writing a detailed blog post including:
 * Convert `.ts` to `.mp4` with `ffmpeg`
 
 > 🔗 <a href="https://kay-a11y.github.io/posts/m3u8-probe/" target="_blank">Read the full tutorial on my blog</a>.
-
-> Will update soooon!
 
 ## 🚧 TODO
 
