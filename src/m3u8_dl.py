@@ -59,6 +59,7 @@ def get_segs(m3u8_file, base_url):
                 segs.append(line)
 
             elif "/" not in line and line.endswith(".ts"):
+            # elif ".ts" in line:
                 segs.append(line)
 
             elif line.startswith("http") and line.endswith(".ts"):
